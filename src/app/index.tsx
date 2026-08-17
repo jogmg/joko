@@ -1,10 +1,8 @@
-import { Stack, Link } from 'expo-router';
-
-import { View } from 'react-native';
-
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import { ScreenContent } from '@/components/ScreenContent';
+import { Link, Stack } from 'expo-router';
+import { View } from 'react-native';
 
 export default function Home() {
   return (

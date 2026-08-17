@@ -3,7 +3,6 @@
     "name": "joko",
     "slug": "joko",
     "version": "1.0.0",
-
     "scheme": "joko",
     "platforms": ["ios", "android"],
     "web": {
@@ -23,15 +22,11 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
