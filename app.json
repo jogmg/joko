@@ -16,9 +16,16 @@
         "expo-splash-screen",
         {
           "image": "./assets/splash.png",
-          "backgroundColor": "#ffffff"
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#280056",
+          "dark": {
+            "image": "./assets/splash.png",
+            "backgroundColor": "#280056"
+          }
         }
-      ]
+      ],
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -26,7 +33,7 @@
     },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
@@ -34,8 +41,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#280056"
+      },
+      "package": "com.anonymous.joko"
     }
   }
 }

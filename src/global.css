@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Semantic color variables. Source: docs/03-design-system.md.
+ * Values are space-separated RGB channels so Tailwind can apply opacity.
+ * ThemeProvider republishes these per scheme, including manual overrides.
+ */
+:root {
+  --background: 255 251 255;
+  --on-background: 29 27 30;
+  --surface: 255 251 255;
+  --on-surface: 29 27 30;
+  --surface-variant: 232 224 235;
+  --on-surface-variant: 75 69 79;
+  --outline: 123 117 127;
+  --outline-variant: 203 195 206;
+  --primary: 116 69 183;
+  --on-primary: 255 251 255;
+  --primary-container: 237 220 255;
+  --on-primary-container: 40 0 86;
+  --brand: 40 0 86;
+  --on-brand: 255 251 255;
+  --secondary: 100 91 112;
+  --secondary-container: 235 221 247;
+  --on-secondary-container: 31 24 42;
+  --tertiary: 128 82 92;
+  --tertiary-container: 255 216 224;
+  --on-tertiary-container: 49 16 25;
+  --error: 186 26 26;
+  --error-container: 255 218 215;
+  --on-error-container: 65 1 2;
+  --surface-1: 244 238 247;
+  --surface-2: 238 231 241;
+  --surface-3: 231 223 236;
+  --surface-4: 229 221 235;
+  --surface-5: 225 216 231;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 29 27 30;
+    --on-background: 231 224 231;
+    --surface: 29 27 30;
+    --on-surface: 202 197 203;
+    --surface-variant: 75 69 79;
+    --on-surface-variant: 203 195 206;
+    --outline: 149 141 152;
+    --outline-variant: 75 69 79;
+    --primary: 216 186 255;
+    --on-primary: 67 4 134;
+    --primary-container: 90 41 156;
+    --on-primary-container: 237 220 255;
+    --brand: 40 0 86;
+    --on-brand: 255 251 255;
+    --secondary: 207 194 220;
+    --secondary-container: 76 67 88;
+    --on-secondary-container: 235 221 247;
+    --tertiary: 241 183 195;
+    --tertiary-container: 100 58 68;
+    --on-tertiary-container: 255 216 224;
+    --error: 254 180 171;
+    --error-container: 147 0 10;
+    --on-error-container: 255 218 215;
+    --surface-1: 38 35 41;
+    --surface-2: 44 40 48;
+    --surface-3: 50 44 55;
+    --surface-4: 51 46 57;
+    --surface-5: 55 49 62;
+  }
+}
